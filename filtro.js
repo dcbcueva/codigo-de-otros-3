@@ -1,15 +1,15 @@
-// Tenemos un li de productos
+// Tenemos un listado  de productos y queremos mostrarlo y filtar por tipo o color
 
 const productos = [
-  {nombre: "Zapato negro", tipo: "zapato", color: "negro", img: "./taco-negro.jpg"},
-  {nombre: "Zapato azul", tipo: "zapato", color: "azul", img: "./taco-azul.jpg"},
-  {nombre: "Bota negra", tipo: "bota", color: "negro", img: "./bota-negra.jpg"},
-  {nombre: "Bota azul", tipo: "bota", color: "azul", img: "./bota-azul.jpg"},
-  {nombre: "Zapato rojo", tipo: "zapato", color: "rojo", img: "./zapato-rojo.jpg"}
+  {nombre: "Zapato negro", tipo: "zapato", color: "negro", img: "taco-negro.jpg"},
+  {nombre: "Zapato azul", tipo: "zapato", color: "azul", img: "taco-azul.jpg"},
+  {nombre: "Bota negra", tipo: "bota", color: "negro", img: "bota-negra.jpg"},
+  {nombre: "Bota azul", tipo: "bota", color: "azul", img: "bota-azul.jpg"},
+  {nombre: "Zapato rojo", tipo: "zapato", color: "rojo", img: "zapato-rojo.jpg"}
 ]
 
 const li = document.getElementsByName("lista-de-productos")
-const $i = document.querySelector('.input');
+const $i = document.querySelector('input');
 
 for (let i = 0; i < productos.length; i++) {
   var d = document.createElement("div")
